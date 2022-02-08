@@ -12,7 +12,7 @@ closeBtn.addEventListener('click', function(){
     toggleBtn.style.display = "block";
 });
 
-const imageUrl = "../tmp/test.jpg";
+// const imageUrl = "../tmp/test.jpg";
 async function getImage(imageUrl, imgID){
   const response = await fetch(imageUrl)
   const imageBlob = await response.blob()
@@ -23,6 +23,6 @@ async function getImage(imageUrl, imgID){
   document.body.appendChild(image)
   document.getElementById(imgID).appendChild(image);
 }
-getImage("../tmp/18LSNx6BRBcyolvbs35_fyyYBHmb3g8fS.jpg", "image");
-getImage("../tmp/18JGYg6Op6YjPVIKcqUAfRuCt3fCJw85H.jpg", "image1");
-getImage("../tmp/1pq5JFMCdHah-l8eMd0xtwxjF2NAZJ0jA.jpg", "image2");
+getImage("./images/18LSNx6BRBcyolvbs35_fyyYBHmb3g8fS.jpg", "image");
+getImage("./images/18JGYg6Op6YjPVIKcqUAfRuCt3fCJw85H.jpg", "image1");
+getImage("./images/1pq5JFMCdHah-l8eMd0xtwxjF2NAZJ0jA.jpg", "image2");
